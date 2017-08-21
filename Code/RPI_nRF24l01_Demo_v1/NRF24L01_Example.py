@@ -1,8 +1,23 @@
 import RPi.GPIO as GPIO
 from lib_nrf24 import NRF24
+from threading import Thread
 import time
 import spidev
 
+
+class inputThread(Thread):
+    def __init__ (self):
+        Thread.__init__(self)
+
+    def run(self):
+        tx_string = ""
+        while True:
+            tx_string = raw_input()
+            print("Send: {}".format(tx_string))
+            radio.stopListening()
+            radio.write(tx_string + '\0')
+            radio.startListening()
+        
 
 GPIO.setmode(GPIO.BCM)
 
@@ -37,6 +52,12 @@ print("---------------------------")
 
 radio.startListening()
 
+threads = []
+
+ThInput = inputThread()
+ThInput.start()
+threads.append(ThInput)
+
 while(1):
 
     # executes when payload available
@@ -54,13 +75,9 @@ while(1):
         # Printing to screen
         print("Got: {}".format(string))
         print("Lenght: {}".format(lenght))
-
         
-#    else:
-#        tx_string = ""
 #        tx_string  = raw_input()
 
-#        radio.stopListening()
-#        radio.write(tx_string)
-#        radio.startListening()
+for t in threads:
+    t.join()
     
