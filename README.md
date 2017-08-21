@@ -1,4 +1,4 @@
-# Sensor Network Proj
+# Sensor Network Project
 ### Sensor Network with Web Access
 Remote monitoring and data logging system with a broader scope of capabilities, without significant increase in price. Applications are: telemetry of a micro-grid, household energy consumption monitoring and general Internet of Things applications.
 
