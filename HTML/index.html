@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<!-- document_head.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <base href="#">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css"
+          media="screen and (max-width: 900px)">
+    <script src="scripts/rotate.js"></script>
+    <script src="scripts/menus.js"></script>
+    <script src="scripts/data.py"></script>
+    <title>NSCC Sensors</title>
+  </head>
+
+  <!-- index.html for ch07/nature1 -->
+ <! <body onload="startRotation()">
+    <header>
+      <!-- logo.html -->
+      <div id="logo">
+          <img src="images/Nscc_logo.png"
+               alt="NSCC Logo"
+               width="500"
+               height="112">
+      </div>
+
+      <!-- menus.html -->
+    <nav onmouseout="hide()">
+      <ul class="Links">
+        <li><a href="#" onmouseover="show('m1')">Home</a></li>
+        <li><a href="#" onmouseover="show('m2')">Overview</a></li>
+        <li>
+          <a href="#" onmouseover="show('m3')">Sensors</a> 
+          <div id="m3" onmouseover="show('m3')">
+            <a href="#">Sensor1</a>
+            <a href="#">Sensor2</a>
+            <a href="#">Sensor3</a>
+            <a href="#">Sensor4</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" onmouseover="show('m5')">About Us</a> 
+          <div id="m5" onmouseover="show('m5')">
+            <a href="#">Placeholder</a>
+            <a href="#">Placeholder</a>
+            <a href="#">Placeholder</a>
+            <a href="#">Placeholder</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" onmouseover="show('m6')">Contact Us</a> 
+          <div id="m6" onmouseover="show('m6')">
+            <a href="#">Locations</a>
+            <a href="#">Feedback Form</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    </header>
+    <main>
+      <article id="textLeft">
+        <h3>Applied Research</h3>
+        <p>NSCC Applied Research develops practical and innovative solutions for 
+	        industry's real-world problems. With an expert research team and network 
+	        of faculty and students from some of our most challenging and cutting-edge 
+	        programs, we help industry improve their products, enhance processes, and 
+	        grow their businesses. NSCC has well-equipped facilities which provide us 
+	        with the tools to contribute to the development of new technologies that we 
+	        can transfer to our partners. The commercialization of research findings adds 
+	        value to the communities we serve and contributes to the economic growth of 
+	        our province.</p>
+      </article>
+      <div id="image">
+	    <a href="https://placeholder.com">
+		  <img src="http://via.placeholder.com/200x300"></a>
+      </div>
+    </main>
+    <footer>
+      <!-- footer_content.html -->
+      &copy; NSCC 2017
+
+    </footer>
+  </body>
+</html>

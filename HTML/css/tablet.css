@@ -1,0 +1,44 @@
+/* tablet.css */
+
+/****************************************************
+This style sheet takes effect when the width of the 
+viewport (browser window) falls below 900px.        */
+
+/* gives some whitespace on either side of the display */
+body { width: 95%; }
+
+/* visually separates a menu link from the one below it */
+ul.Links li { border-bottom: 1px solid #FFF; }
+
+/* move 4th and following menu items to second row */
+ul.Links li:nth-child(4) { clear: left; }
+
+/* ensures both rows of menu links have same length*/
+ul.Links li:nth-child(1) { width: 33%; }
+ul.Links li:nth-child(2) { width: 33%; }
+ul.Links li:nth-child(3) { width: 33%; }
+ul.Links li:nth-child(4) { width: 25%; }
+ul.Links li:nth-child(5) { width: 25%; }
+ul.Links li:nth-child(6) { width: 25%; }
+ul.Links li:nth-child(7) { width: 24%; }
+
+/*******************************************************
+makes right edges of first and second menu item rows
+line up, at the expense of a 2px gap instead of a 1px
+gap between "e-store" and "Products+Services"          */
+nav ul li:nth-child(2) { border-right: 2px solid #FFF; }
+
+/* makes logo "scale down" as the width decreases */
+div#logo img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* removes the image from the home page*/
+div#image { display: none; }
+
+/* same style for both of these in the tablet configuration */
+article#textLeft { width: 95%; }
+
+/* reduces size of footer text to keep it from "overflowing */
+footer { font-size: 80%; }
