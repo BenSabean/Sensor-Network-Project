@@ -101,6 +101,12 @@ div#image {
   text-align: center;
 }
 
+div#bgimage {
+    float: center;
+    width: 100%;
+    text-align: center;
+}
+
 /********************************************
 footer now contains just a copyright notice */
 footer {
