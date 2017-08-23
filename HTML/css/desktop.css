@@ -107,6 +107,18 @@ div#bgimage {
     text-align: center;
 }
 
+div#bgimage2 {
+    float: center;
+    width: 100%;
+    text-align: center;
+}
+
+div#bgimage3 {
+    float: center;
+    width: 100%;
+    text-align: center;
+}
+
 /********************************************
 footer now contains just a copyright notice */
 footer {
